@@ -74,5 +74,16 @@ public class Product1BrokerTest {
 		ecommerceService.addProduct( new ProductsPO("1010","DELL Inspiron","Laptop",82000.0,"5680"));
 		
 	}
+	@State("1011")
+
+	public void withSomeState1() {
+
+		System.out.println("get list of products by productid 1011");
+		
+		EcommerceService ecommerceService = applicationContext.getBean(EcommerceService.class);
+		ecommerceService.addManufacturer( new ManufacturerPO("5681","Lenova","Hyderabad",null ));
+		ecommerceService.addProduct( new ProductsPO("1011","HP Zbook","Laptop",65000.0,"5681"));
+		
+	}
 	
 }
