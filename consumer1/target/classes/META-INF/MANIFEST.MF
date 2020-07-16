@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Built-By: dell
+Build-Jdk: 12.0.1
+Implementation-Title: productconsumerapplication
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.test.consumer1
+Main-Class: your.package.yourprogram.YourMainClass
+Created-By: Maven Integration for Eclipse
+

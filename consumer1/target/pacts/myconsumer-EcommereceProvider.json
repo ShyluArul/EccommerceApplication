@@ -1,0 +1,161 @@
+{
+  "provider": {
+    "name": "EcommereceProvider"
+  },
+  "consumer": {
+    "name": "myconsumer"
+  },
+  "interactions": [
+    {
+      "description": "get product list by productid 1011",
+      "request": {
+        "method": "GET",
+        "path": "/app/products/1011"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "productsVOs": [
+            {
+              "productId": "1011",
+              "productName": "HP Zbook",
+              "productType": "Laptop",
+              "price": 65000.0,
+              "manufacturerId": "5681",
+              "manufacturerName": "Lenova",
+              "manufacturerAddress": "Hyderabad"
+            }
+          ]
+        }
+      },
+      "providerStates": [
+        {
+          "name": "1011"
+        }
+      ]
+    },
+    {
+      "description": "get product list by DELL",
+      "request": {
+        "method": "GET",
+        "path": "/app/manufacturers/name/DELL"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "manufacturerVOs": [
+            {
+              "manufacturerId": "5680",
+              "manufacturerName": "DELL",
+              "manufacturerAddress": "Chennai",
+              "productsList": [
+                {
+                  "productId": "1010",
+                  "productName": "DELL Inspiron",
+                  "productType": "Laptop",
+                  "price": 82000.0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "providerStates": [
+        {
+          "name": "DELL"
+        }
+      ]
+    },
+    {
+      "description": "get Product list by Apple",
+      "request": {
+        "method": "GET",
+        "path": "/app/manufacturers/name/Apple"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "manufacturerVOs": [
+            {
+              "manufacturerId": "5678",
+              "manufacturerName": "Apple",
+              "manufacturerAddress": "Bangalore",
+              "productsList": [
+                {
+                  "productId": "1007",
+                  "productName": "Apple Mack book Pro",
+                  "productType": "Laptop",
+                  "price": 90000.0
+                },
+                {
+                  "productId": "1008",
+                  "productName": "mack book Air",
+                  "productType": "Laptop",
+                  "price": 75000.0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "description": "get product list by HP",
+      "request": {
+        "method": "GET",
+        "path": "/app/manufacturers/name/HP"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "manufacturerVOs": [
+            {
+              "manufacturerId": "5679",
+              "manufacturerName": "Hp",
+              "manufacturerAddress": "Mumbai",
+              "productsList": [
+                {
+                  "productId": "1009",
+                  "productName": "pro book",
+                  "productType": "Laptop",
+                  "price": 83000.0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "description": "get product list by productid 1008",
+      "request": {
+        "method": "GET",
+        "path": "/app/products/1008"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "productsVOs": [
+            {
+              "productId": "1008",
+              "productName": "mack book Air",
+              "productType": "Laptop",
+              "price": 75000.0,
+              "manufacturerId": "5678",
+              "manufacturerName": "Apple",
+              "manufacturerAddress": "Bangalore"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    },
+    "pact-jvm": {
+      "version": "3.6.6"
+    }
+  }
+}
