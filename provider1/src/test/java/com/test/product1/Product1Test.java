@@ -49,14 +49,7 @@ public class Product1Test {
 
 	}
 
-	@TargetRequestFilter
-
-	public void printTheRequestHeaders(HttpRequest request) {
-		Arrays.asList(request.getAllHeaders())
-
-				.forEach(header -> System.out.println(header.getName() + "->" + header.getValue()));
-
-	}
+	
 
 	@AfterClass
 
